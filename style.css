@@ -33,8 +33,22 @@ body {
   font-size: 19px;
   line-height: 1.6;
 
-  font-variant-numeric: oldstyle-nums;
-  font-feature-settings: "onum" 1;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  font-feature-settings:
+    "onum" 1,
+    "pnum" 1;
+}
+h1,
+h2,
+p,
+span,
+li,
+a,
+div {
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  font-feature-settings:
+    "onum" 1,
+    "pnum" 1;
 }
 
 
