@@ -219,7 +219,10 @@ footer {
 .footer-flower img {
   width: 42px;
   height: 42px;
+
   object-fit: cover;
+  object-position: 50% 10%;
+
   border-radius: 50%;
   border: 1px solid var(--border);
   display: block;
