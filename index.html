@@ -1,45 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Gustavo Macegossa</title>
+
+  <meta
+    name="description"
+    content="Personal academic webpage of Gustavo Macegossa, undergraduate mathematics student at the University of Campinas (Unicamp)."
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
-  <h1>Gustavo Macegossa</h1>
+  <div class="container">
 
-  <p>
-    Undergraduate student in Mathematics at the
-    University of Campinas (Unicamp), Brazil.
-  </p>
+    <!-- Header -->
+    <header>
 
-  <h2>About</h2>
+      <h1>Gustavo Macegossa</h1>
 
-  <p>
-    I am an undergraduate mathematics student interested in geometry,
-    topology and related areas.
-  </p>
+      <p class="subtitle">
+        Undergraduate student in Mathematics<br>
+        University of Campinas (Unicamp), Brazil
+      </p>
 
-  <h2>Research</h2>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#notes">Notes & Writings</a>
+        <a href="#activities">Activities</a>
+        <a href="cv.pdf">CV</a>
+      </nav>
 
-  <p>
-    I am currently doing undergraduate research in mathematics.
-  </p>
+    </header>
 
-  <h2>Notes & Writings</h2>
 
-  <p>
-    I plan to use this space to share expository notes,
-    mathematical writings and things I study for fun.
-  </p>
+    <main>
 
-  <h2>Contact</h2>
+      <!-- About -->
+      <section id="about">
 
-  <p>
-    Email: gustavo.macegossa@gmail.com
-  </p>
+        <h2>About</h2>
+
+        <p>
+          I am an undergraduate mathematics student at the
+          <a href="https://www.unicamp.br/" target="_blank">
+            University of Campinas (Unicamp)
+          </a>,
+          Brazil.
+        </p>
+
+        <p>
+          I am interested in geometry and its interactions with
+          algebra and topology. Currently, I am
+          particularly interested in o-minimality and tame geometry.
+        </p>
+
+      </section>
+
+
+      <!-- Research -->
+      <section id="research">
+
+        <h2>Research Interests</h2>
+
+        <ul class="simple-list">
+          <li>O-minimality and tame geometry</li>
+          <li>Algebraic geometry</li>
+          <li>Real and complex geometry</li>
+          <li>Kakeya-type problems</li>
+        </ul>
+
+      </section>
+
+
+      <!-- Notes -->
+      <section id="notes">
+
+        <h2>Notes & Writings</h2>
+
+        <p class="section-description">
+          Some expository notes and informal mathematical writings.
+          These are mainly things I have written while studying topics
+          that interest me.
+        </p>
+
+
+        <div class="publication">
+
+          <div class="publication-title">
+            Cell Decomposition in O-minimal Structures
+          </div>
+
+          <div class="publication-info">
+            Notes from my undergraduate research, 2026.
+          </div>
+
+          <!-- Later we will put the PDF here -->
+          <!-- <a href="notes/cell-decomposition.pdf">PDF</a> -->
+
+        </div>
+
+
+        <div class="publication">
+
+          <div class="publication-title">
+            The Kakeya Conjecture and Notions of Dimension
+          </div>
+
+          <div class="publication-info">
+            Expository notes, 2026.
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- Activities -->
+      <section id="activities">
+
+        <h2>Activities</h2>
+
+        <div class="activity">
+          <span class="year">2026</span>
+          <span>
+            Undergraduate research in mathematics,
+            University of Campinas.
+          </span>
+        </div>
+
+      </section>
+
+
+      <!-- Contact -->
+      <section id="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+          Email:
+          <a href="mailto:gustavo.macegossa@gmail.com">
+            gustavo.macegossa@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <a href="https://github.com/gustavomacegossa" target="_blank">
+            GitHub
+          </a>
+        </p>
+
+      </section>
+
+    </main>
+
+
+    <footer>
+
+      <p>
+        Last updated September 2026.
+      </p>
+
+    </footer>
+
+  </div>
 
 </body>
+
 </html>
