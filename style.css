@@ -239,8 +239,16 @@ footer {
   }
 
   .header-flower img {
-    width: 100px;
-  }
+  width: 105px;
+  height: 105px;
+
+  object-fit: cover;
+  object-position: 50% 8%;
+
+  border-radius: 50%;
+  border: 1px solid var(--border);
+
+  display: block;
 }
 
 @media (max-width: 600px) {
