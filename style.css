@@ -1,0 +1,224 @@
+/* ---------- General ---------- */
+
+:root {
+  --background: #faf9f7;
+  --text: #252525;
+  --secondary: #666666;
+  --accent: #315b72;
+  --border: #dedbd6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+
+/* ---------- Main container ---------- */
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 70px 28px 40px 28px;
+}
+
+
+/* ---------- Header ---------- */
+
+header {
+  margin-bottom: 65px;
+}
+
+h1 {
+  margin: 0;
+
+  font-size: 2.45rem;
+  font-weight: 500;
+  line-height: 1.15;
+
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  margin-top: 12px;
+  margin-bottom: 25px;
+
+  color: var(--secondary);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+
+/* ---------- Navigation ---------- */
+
+nav {
+  padding-top: 15px;
+  border-top: 1px solid var(--border);
+}
+
+nav a {
+  display: inline-block;
+
+  margin-right: 20px;
+  margin-bottom: 8px;
+
+  color: var(--text);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 0.84rem;
+
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+
+/* ---------- Sections ---------- */
+
+section {
+  margin-bottom: 55px;
+}
+
+h2 {
+  margin-bottom: 18px;
+
+  font-size: 1.35rem;
+  font-weight: 500;
+
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+
+/* ---------- Links ---------- */
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
+/* ---------- Research list ---------- */
+
+.simple-list {
+  margin-top: 0;
+  padding-left: 22px;
+}
+
+.simple-list li {
+  margin-bottom: 5px;
+}
+
+
+/* ---------- Notes / Publications ---------- */
+
+.section-description {
+  color: var(--secondary);
+  margin-bottom: 28px;
+}
+
+.publication {
+  margin-bottom: 25px;
+}
+
+.publication-title {
+  font-weight: 600;
+}
+
+.publication-info {
+  margin-top: 2px;
+
+  color: var(--secondary);
+  font-size: 0.95rem;
+}
+
+
+/* ---------- Activities ---------- */
+
+.activity {
+  display: grid;
+
+  grid-template-columns: 65px 1fr;
+  gap: 15px;
+
+  margin-bottom: 12px;
+}
+
+.year {
+  color: var(--secondary);
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+  margin-top: 70px;
+
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+
+  color: var(--secondary);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 0.75rem;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+
+  .container {
+    padding: 45px 22px 30px 22px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    margin-right: 14px;
+  }
+
+  .activity {
+    grid-template-columns: 55px 1fr;
+    gap: 10px;
+  }
+
+}
